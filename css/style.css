@@ -11,9 +11,9 @@ header {
 header a {
   text-decoration: none;
   color: black;
-  font-family: 'Inconsolata';
+  font-family: 'Inconsolata', system-ui;
   font-weight: 700;
-  padding-left: 4vw;
+  padding-left: 5vw;
   font-size: 22px;
 }
 
@@ -36,7 +36,7 @@ figure {
 }
 
 .principal-title {
-  font-family: 'Space Mono';
+  font-family: 'Space Mono', system-ui;
   font-size: 40px;
   max-width: 60%;
   color: #333333;
@@ -44,7 +44,7 @@ figure {
 }
 
 .principal-text {
-  font-family: 'Space Mono';
+  font-family: 'Space Mono', system-ui;
   max-width: 40%;
   line-height: 1.5;
   color: #4F4F4F;
@@ -54,7 +54,7 @@ figure {
 .principal-button {
   background-color:#333333;
   color: white;
-  font-family: 'Space Mono';
+  font-family: 'Space Mono', system-ui;
   text-transform: uppercase;
   padding: 15px 30px;
   margin-top: 30px;
@@ -69,11 +69,53 @@ footer {
 
 footer span {
   font-size: 12px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', system-ui;
   color: #BDBDBD;
 }
 footer a {
   text-decoration: none;
   color: #BDBDBD;
   font-weight: 600;
+}
+
+@media (max-width: 375px) {
+  main {
+    grid-template-columns: 1fr;
+    padding-top: 3vh;
+    justify-content: center;
+    padding-left: 20px;
+  }
+
+  .principal-image {
+    margin: 0 auto 5vh;
+    padding-left: 0;
+  }
+
+  .right-part {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+
+  .principal-title {
+    min-width: 90%;
+    font-size: 35px;
+    line-height: 1.3;
+  }
+
+  .principal-text {
+    min-width: 80%;
+    font-size: 18px;
+    margin: 25px 0;
+  }
+
+  .principal-button {
+    margin-top: 10px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
