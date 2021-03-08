@@ -45,7 +45,7 @@ figure {
 
 .principal-text {
   font-family: 'Space Mono', system-ui;
-  max-width: 40%;
+  max-width: 45%;
   line-height: 1.5;
   color: #4F4F4F;
   font-size: 20px;
@@ -78,7 +78,58 @@ footer a {
   font-weight: 600;
 }
 
-@media (max-width: 375px) {
+
+@media (max-width: 1200px) {
+  .principal-title {
+    max-width: 65%;
+  }
+
+  .principal-text {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 1070px) {
+  .principal-title {
+    max-width: 70%;
+  }
+
+  .principal-text {
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 975px) {
+  .principal-image {
+    max-width: 80%;
+    padding-left: 3vw;
+  }
+
+  .principal-title {
+    max-width: 85%;
+  }
+
+  .principal-text {
+    max-width: 61%;
+  }
+}
+
+@media (max-width: 768px) {
+  .principal-image {
+    max-width: 90%;
+    padding-left: 1vw;
+  }
+
+  .principal-title {
+    max-width: 100%;
+  }
+
+  .principal-text {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
   main {
     grid-template-columns: 1fr;
     padding-top: 3vh;
@@ -89,6 +140,7 @@ footer a {
   .principal-image {
     margin: 0 auto 5vh;
     padding-left: 0;
+    max-width: 70%;
   }
 
   .right-part {
@@ -117,5 +169,17 @@ footer a {
     position: absolute;
     bottom: 0;
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .principal-image {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 380px) {
+  .principal-image {
+    max-width: 70%;
   }
 }
